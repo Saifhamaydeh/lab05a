@@ -115,12 +115,17 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(s) {
   
-
+   let n = multiply((s[0]), (s[1]));
+   
+   let x = multiply(n, s[2]);
+   
+   return x;
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
+console.log(multiplyArray(testArray));
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
