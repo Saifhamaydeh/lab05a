@@ -156,11 +156,20 @@ Test this function by hand in the console to get it working, and when you think 
 let te = [1,2,3,4,5]; //eslint-disable-line
 
 function mu(da) {
+   let y;
+    let num = da.length;
+  
+  for (let i = 0; i < num ; i++) {
+    let v1 = da[i];
+    let v2 =da[i+1];
+   y=multiply(v1, v2); 
+  }
+  return y;
 }
 
        // var questionSixArray = [];
        
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
-
+console.log(mu(te)); 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
