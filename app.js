@@ -81,12 +81,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(s) {
+   var b = sum((s[0]), (s[1]));
    
+   var c = sum(b, s[2]);
+   
+   return c; 
 }
 
   // Here is the test for sumArray(); uncomment it to run it
   
-  
+  console.log(sumArray(testArray));
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
